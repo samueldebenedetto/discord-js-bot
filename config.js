@@ -3,10 +3,10 @@ module.exports = {
   SUPPORT_SERVER: "", // Your bot support server
   PREFIX_COMMANDS: {
     ENABLED: true, // Enable/Disable prefix commands
-    DEFAULT_PREFIX: "!", // Default prefix for the bot
+    DEFAULT_PREFIX: "/", // Default prefix for the bot
   },
   INTERACTIONS: {
-    SLASH: false, // Should the interactions be enabled
+    SLASH: true, // Should the interactions be enabled
     CONTEXT: false, // Should contexts be enabled
     GLOBAL: false, // Should the interactions be registered globally
     TEST_GUILD_ID: "xxxxxxxxxxx", // Guild ID where the interactions should be registered. [** Test you commands here first **]
@@ -52,7 +52,7 @@ module.exports = {
 
   MUSIC: {
     ENABLED: false,
-    IDLE_TIME: 60, // Time in seconds before the bot disconnects from an idle voice channel
+    IDLE_TIME: 120, // Time in seconds before the bot disconnects from an idle voice channel
     MAX_SEARCH_RESULTS: 5,
     DEFAULT_SOURCE: "SC", // YT or YTM or SC
     // Add any number of lavalink nodes here
@@ -85,7 +85,7 @@ module.exports = {
   },
 
   MODERATION: {
-    ENABLED: false,
+    ENABLED: true,
     EMBED_COLORS: {
       TIMEOUT: "#102027",
       UNTIMEOUT: "#4B636E",
@@ -103,10 +103,10 @@ module.exports = {
   },
 
   PRESENCE: {
-    ENABLED: false, // Whether or not the bot should update its status
+    ENABLED: true, // Whether or not the bot should update its status
     STATUS: "online", // The bot's status [online, idle, dnd, invisible]
-    TYPE: "WATCHING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
-    MESSAGE: "{members} members in {servers} servers", // Your bot status message
+    TYPE: "LISTENING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
+    MESSAGE: "Underwatch is watching you!", // Your bot status message
   },
 
   STATS: {
@@ -116,7 +116,7 @@ module.exports = {
   },
 
   SUGGESTIONS: {
-    ENABLED: false, // Should the suggestion system be enabled
+    ENABLED: true, // Should the suggestion system be enabled
     EMOJI: {
       UP_VOTE: "⬆️",
       DOWN_VOTE: "⬇️",
@@ -127,7 +127,7 @@ module.exports = {
   },
 
   TICKET: {
-    ENABLED: false,
+    ENABLED: true,
     CREATE_EMBED: "#068ADD",
     CLOSE_EMBED: "#068ADD",
   },
